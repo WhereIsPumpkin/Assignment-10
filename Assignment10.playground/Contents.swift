@@ -167,7 +167,11 @@ lifeSupportSystem.drone?.task = "Oxygen Maintenance"
 missionControl.requestDroneStatus(module: researchLab)
 missionControl.requestDroneStatus(module: lifeSupportSystem)
 
+// Test the .toggleLockdown function
+orbitronSpaceStation.toggleLockdown(withPassword: "password123")
 
+// Request control center status after attempting to toggle lockdown
+missionControl.requestControlCenterStatus()
 
 
 
